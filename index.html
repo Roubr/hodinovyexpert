@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hodinový Manžel</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" 
+    rel="stylesheet"
+  />
+  <!-- Odkaz na externí CSS soubor -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HLAVNÍ HLAVIČKA S NAVIGACÍ -->
+  <header>
+    <div class="nav-container">
+      <div class="nav-brand">Hodinový Manžel</div>
+      <nav>
+        <ul>
+          <li><a href="#o-mne">O mně</a></li>
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SEKCE -->
+  <section class="hero">
+    <div>
+      <h1>Profesionální Hodinový Manžel</h1>
+      <p>
+        Potřebujete pomoc s údržbou či opravami ve vaší domácnosti? 
+        Jsem vám k službám! Od drobných oprav po větší rekonstrukce – 
+        vždy se na mě můžete spolehnout.
+      </p>
+    </div>
+  </section>
+
+  <!-- O MNĚ -->
+  <section class="about" id="o-mne">
+    <h2>O mně</h2>
+    <!-- Lokální fotka, např. ./images/ja.jpg -->
+    <img src="./images/ja.png" alt="Fotka Marcela Stodolovského" class="my-photo">
+
+    <p>
+      Jmenuji se Marcel Stodolovský a jsem zkušený hodinový manžel s více než 
+      10 lety praxe v oboru. Svou práci dělám s důrazem na detail, 
+      kvalitu a spokojenost klientů. Věřím, že poctivost a spolehlivost 
+      jsou klíčem k úspěchu.
+    </p>
+    <p>
+      Mám rád výzvy a rád se pouštím i do nestandardních projektů. 
+      Záleží mi na tom, aby každý zákazník dostal přesně to, co potřebuje. 
+      Kontaktujte mě a společně najdeme řešení.
+    </p>
+  </section>
+
+  <!-- SLUŽBY -->
+  <section class="services" id="sluzby">
+    <h2>Služby</h2>
+    <div class="services-container">
+      <!-- PRÁCE NA ZAHRADĚ -->
+      <div class="service-card">
+        <h3>Práce na zahradě</h3>
+        <ul>
+          <li>Sekání trávy</li>
+          <li>Montáž zahradních domků a pergol</li>
+          <li>Drobné zednické práce</li>
+          <li>Další práce dle domluvy</li>
+        </ul>
+      </div>
+
+      <!-- DOMÁCÍ PRÁCE -->
+      <div class="service-card">
+        <h3>Domácí práce</h3>
+        <ul>
+          <li>Montáž nábytku, poliček a obkladových panelů</li>
+          <li>Pokládka plovoucích podlah</li>
+          <li>Instalace dřezů, vodovodních baterií, umyvadel, záchodů</li>
+          <li>Další drobné práce v domácnosti</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact" id="kontakt">
+    <h2>Kontakt</h2>
+    <p class="phone-number">Tel.: +420 123 456 789</p>
+
+    <!-- FORMULÁŘ PŘES FORMSUBMIT + DĚKOVACÍ STRÁNKA -->
+    <form class="contact-form" 
+          action="https://formsubmit.co/stodolovsky@seznam.cz" 
+          method="POST">
+      <!-- Po úspěšném odeslání přesměrování na `dekujeme.html` -->
+      <input type="hidden" name="_next" value="./dekujeme.html">
+      
+      <h3>Kontaktní formulář</h3>
+
+      <label for="name">Jméno a příjmení</label>
+      <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Váš email" required>
+
+      <label for="message">Zpráva</label>
+      <textarea id="message" name="message" rows="5" placeholder="Vzkaz pro mě..." required></textarea>
+
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
+
+  <!-- PATIČKA -->
+  <footer>
+    <p>&copy; 2025 Hodinový Manžel – Marcel Stodolovský</p>
+  </footer>
+
+</body>
+</html>
