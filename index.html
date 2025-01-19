@@ -92,6 +92,8 @@
   <section class="contact" id="kontakt">
     <h2>Kontakt</h2>
     <p class="phone-number">Tel.: +420 732 551 653</p>
+    <!-- Oblast působení -->
+    <p class="service-area">Oblast působení: České Budějovice a okolí</p>
 
     <!-- FORMULÁŘ PŘES FORMSUBMIT + DĚKOVACÍ STRÁNKA -->
     <form class="contact-form" 
@@ -106,11 +108,11 @@
       <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
 
       <label for="email">Email</label>
-      <!-- DŮLEŽITÉ: type="email" a inputmode="email" -->
+      <!-- inputmode="email" pro mobilní klávesnici -->
       <input type="email" id="email" name="email" placeholder="Váš email" required inputmode="email">
 
       <label for="message">Zpráva</label>
-      <!-- inputmode="text" pro zobrazení textové klávesnice -->
+      <!-- inputmode="text" pro textovou mobilní klávesnici -->
       <textarea id="message" name="message" rows="5" placeholder="Vzkaz pro mě..." required inputmode="text"></textarea>
 
       <button type="submit">Odeslat</button>
